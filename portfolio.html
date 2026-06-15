@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atiqa Shahbaz | Web Developer Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Segoe UI,Arial,sans-serif;
+background:#0f172a;
+color:#e5e7eb;
+line-height:1.6;
+padding-top:90px;
+}
+.navbar{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+background:#1e3a8a;
+display:flex;
+align-items:center;
+gap:6px;
+padding:8px;
+border-radius:50px;
+box-shadow:0 8px 24px rgba(0,0,0,0.4);
+z-index:100;
+max-width:95%;
+flex-wrap:nowrap;
+overflow-x:auto;
+}
+.navbar::-webkit-scrollbar{display:none}
+.nav-logo{
+width:36px;
+height:36px;
+border-radius:50%;
+background:#0f172a;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-shrink:0;
+font-size:1.1rem;
+}
+.navbar ul{
+display:flex;
+align-items:center;
+list-style:none;
+gap:4px;
+flex-wrap:nowrap;
+}
+.navbar a{
+color:#dbeafe;
+text-decoration:none;
+font-weight:600;
+font-size:0.9rem;
+padding:10px 16px;
+border-radius:30px;
+white-space:nowrap;
+transition:all 0.2s;
+display:inline-block;
+}
+.navbar a:hover{
+background:#2563eb;
+color:#fff;
+}
+.navbar .nav-contact{
+background:#fff;
+color:#1e3a8a;
+padding:10px 18px;
+border-radius:30px;
+font-weight:600;
+font-size:0.9rem;
+white-space:nowrap;
+}
+.navbar .nav-contact:hover{
+background:#bfdbfe;
+color:#1e3a8a;
+}
+.hero{
+min-height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+.hero h1{font-size:3rem}
+.hero span{color:#60a5fa}
+.hero .card{
+text-align:center;
+max-width:700px;
+margin:15px auto;
+}
+.btn{
+display:inline-block;
+padding:12px 22px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin:8px;
+}
+.container{width:90%;max-width:1100px;margin:auto}
+section{padding:70px 0;scroll-margin-top:100px}
+h2{text-align:center;margin-bottom:30px}
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:14px;
+margin:15px 0;
+}
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:15px;
+}
+.skill{
+background:#334155;
+padding:12px;
+border-radius:8px;
+text-align:center;
+}
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:14px;
+}
+.project-card ul{
+margin:10px 0 10px 20px;
+}
+.project-card p strong{
+color:#60a5fa;
+}
+.contact{
+text-align:center;
+}
+.contact a{
+color:#60a5fa;
+text-decoration:none;
+}
+footer{
+background:#111827;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+@media(max-width:768px){
+.hero h1{font-size:2rem}
+.navbar{
+border-radius:30px;
+top:10px;
+padding:6px;
+gap:4px;
+}
+.navbar a{
+padding:8px 10px;
+font-size:0.75rem;
+}
+.navbar .nav-contact{
+padding:8px 12px;
+font-size:0.75rem;
+}
+.nav-logo{
+width:30px;
+height:30px;
+font-size:0.9rem;
+}
+body{padding-top:80px}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="nav-logo">👩‍💻</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact" class="nav-contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div>
+<div class="card">
+<h1>Hi, I'm <span>Atiqa Shahbaz</span></h1>
+<p>Computer Science graduate with a CGPA of 3.6 and a strong passion for software engineering, web development, and problem solving. Skilled in designing efficient solutions using C, C++, Java, JavaScript, and MySQL. Currently seeking internship opportunities where I can contribute to real-world projects, enhance my technical expertise, and grow as a web developer.</p>
+</div>
+<a href="#" class="btn" onclick="downloadCV(event)">Download CV</a>
+<a href="#projects" class="btn">View Projects</a>
+</div>
+</section>
+
+<div class="container">
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>
+I am a Computer Science graduate from Punjab Group of Colleges with a solid academic background and hands-on experience in software development. Throughout my degree, I have worked on academic projects that strengthened my understanding of programming, object-oriented design, databases, and data structures.
+</p>
+<br>
+<p>
+I enjoy building practical solutions to real-world problems and continuously learning new technologies. My goal is to start my professional journey as a Web Development Intern where I can collaborate with experienced developers, contribute to meaningful projects, and further develop my technical and professional skills.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills">
+<div class="skill">C</div>
+<div class="skill">C++</div>
+<div class="skill">Java</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">MySQL</div>
+<div class="skill">OOP</div>
+<div class="skill">DSA</div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<h3>BS Computer Science</h3>
+<p>Punjab Group of Colleges (PGC) — 2026</p>
+<p>CGPA: 3.6 / 4.0</p>
+</div>
+<div class="card">
+<h3>ICS (Intermediate in Computer Science)</h3>
+<p>Punjab Group of Colleges (PGC) — 2022</p>
+</div>
+<div class="card">
+<h3>Matriculation</h3>
+<p>Government Higher Secondary School — 2020</p>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<div class="project-card">
+<h3>Sales Management System</h3>
+<p>Designed and developed a comprehensive Sales Management System to streamline the management of products, customers, sales transactions, and inventory records.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Product management and inventory tracking</li>
+<li>Customer record management</li>
+<li>Sales transaction processing</li>
+<li>Data storage and retrieval</li>
+<li>Report generation</li>
+</ul>
+<p><strong>Technologies Used:</strong> JavaScript, HTML, CSS, Django</p>
+</div>
+
+<div class="project-card">
+<h3>Future Project</h3>
+<p>Student Management System</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+    <li>Student registration/enrollment (naam, roll number, contact info, address)</li>
+    <li>Course/class management (subjects, sections, batches)</li>
+    <li>Attendance tracking</li>
+    <li>Fee management (fee structure, payments, dues, receipts)</li>
+    <li>Timetable/schedule management</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<p>Currently seeking Web Development Internship opportunities. Completed academic projects and gained practical experience through coursework, software development assignments, and self-learning.</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<div class="card contact">
+<p>Email: atiqashah008@gmail.com</p>
+<p>GitHub: <a href="https://github.com/atiqadev" target="_blank">github.com/atiqadev</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/atiqa-shahbaz-627645416" target="_blank">linkedin.com/in/atiqa-shahbaz-627645416</a></p>
+<p>Contact No#: +92 329 9716472</p>
+</div>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Atiqa Shahbaz | Web Development Portfolio</p>
+</footer>
+
+<script>
+function downloadCV(e){
+e.preventDefault();
+const cvText = `ATIQA SHAHBAZ
+Web Development Graduate
+
+----------------------------------------
+SUMMARY
+----------------------------------------
+Computer Science graduate with a CGPA of 3.6 and a strong passion for software engineering, web development, and problem solving. Skilled in designing efficient solutions using C, C++, Java, JavaScript, and MySQL. Currently seeking internship opportunities where I can contribute to real-world projects, enhance my technical expertise, and grow as a web developer.
+
+----------------------------------------
+ABOUT ME
+----------------------------------------
+I am a Computer Science graduate from Punjab Group of Colleges with a solid academic background and hands-on experience in software development. Throughout my degree, I have worked on academic projects that strengthened my understanding of programming, object-oriented design, databases, and data structures.
+
+I enjoy building practical solutions to real-world problems and continuously learning new technologies. My goal is to start my professional journey as a Web Development Intern where I can collaborate with experienced developers, contribute to meaningful projects, and further develop my technical and professional skills.
+
+----------------------------------------
+TECHNICAL SKILLS
+----------------------------------------
+C, C++, Java, HTML, CSS, JavaScript, MySQL, OOP, DSA
+
+----------------------------------------
+EDUCATION
+----------------------------------------
+BS Computer Science - Punjab Group of Colleges (PGC), 2026 - CGPA: 3.6/4.0
+ICS - Punjab Group of Colleges (PGC), 2022
+Matriculation - Government Higher Secondary School, 2020
+
+----------------------------------------
+PROJECTS
+----------------------------------------
+Sales Management System
+Designed and developed a comprehensive Sales Management System to streamline the management of products, customers, sales transactions, and inventory records.
+
+Key Features:
+- Product management and inventory tracking
+- Customer record management
+- Sales transaction processing
+- Data storage and retrieval
+- Report generation
+
+Technologies Used: JavaScript, HTML, CSS, Django
+
+----------------------------------------
+EXPERIENCE
+----------------------------------------
+Currently seeking Web Development Internship opportunities. Completed academic projects and gained practical experience through coursework, software development assignments, and self-learning.
+
+----------------------------------------
+CONTACT
+----------------------------------------
+Email: atiqashah008@gmail.com
+GitHub: github.com/atiqadev
+LinkedIn: https://www.linkedin.com/in/atiqa-shahbaz-627645416
+Contact No#: +92 329 9716472
+`;
+const blob = new Blob([cvText], {type: 'text/plain'});
+const url = URL.createObjectURL(blob);
+const a = document.createElement('a');
+a.href = url;
+a.download = 'Atiqa_Shahbaz_CV.txt';
+document.body.appendChild(a);
+a.click();
+document.body.removeChild(a);
+URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>
